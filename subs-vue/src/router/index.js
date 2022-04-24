@@ -1,26 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import Contents from '../views/Content.vue'
-import ContentDetail from '../components/ContentDetail.vue'
+import Main from '../components/Main.vue'
 import NotFound from '../components/404.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomeView
-    },
-    {
-      path: '/contents',
-      name: 'content',
-      component: Contents
-    },
-    {
-      props:true,
-      path:'/contents/:id',
-      name:'ContentDetail',
-      component: ContentDetail
+      name: 'Main',
+      component: Main
     },
     {
       path:'/:catchAll(.*)',
