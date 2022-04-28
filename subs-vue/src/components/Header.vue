@@ -1,8 +1,21 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import PrimaryNavigationVue from '@/components/PrimaryNavigation.vue';
+</script>
+<script>
+export default{
+  data(){
+
+    return{
+      opened:false
+    }
+  }
+}
+
 </script>
 <template>
     <header>
+          <PrimaryNavigationVue v-if="opened === true"/>
         <nav>
             <div class="wrapper-nav">
                 <div class="logo">
@@ -13,7 +26,7 @@ import { RouterLink, RouterView } from 'vue-router'
                     <input type="text" placeholder="Cautare...">
                 </div>
                 <div class="menu">
-                    <button aria-label="open primary navigation">
+                    <button @click="opened = true" aria-label="open primary navigation">
                         <div class="wrapper-line">
                             <div class="line"></div>
                             <div class="line"></div>
@@ -23,6 +36,7 @@ import { RouterLink, RouterView } from 'vue-router'
                 </div>
             </div>
         </nav>
+    
     </header>
 </template>
 <style scoped>
@@ -78,7 +92,6 @@ input {
 ::placeholder {
   color: rgba(79, 17, 17, 50%);
   font-size: 1rem;
-  font-weight: 600;
 }
 button {
   margin: 0;

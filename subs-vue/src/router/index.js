@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Main from '../components/Main.vue'
 import NotFound from '../components/404.vue'
+import DetailsCard from'../components/DetailsCard.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -14,6 +15,12 @@ const router = createRouter({
       name: 'NotFound',
       component: NotFound
     },
+    {
+      path:'/details',
+      name:'DetailsCard',
+      component:DetailsCard      
+    }
+    ,
     {
       path: '/about',
       name: 'about',
