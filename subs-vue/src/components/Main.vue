@@ -121,7 +121,7 @@ export default {
         },
         {
           id: "Halo",
-          imagine: "src/assets/xl_2934286_93503ec7.webp",
+          imagine: "src/xl_2934286_93503ec7.jpg",
           genul: "Actiune, Aventura, Sci-fi",
           traducator: "Anonimus",
           uploader: "Aurelian",
