@@ -9,7 +9,7 @@ export default {
       obiecte: [
         {
           id: "Batman",
-          imagine: "../public/xl_1877830_764432ad.webp",
+          imagine: "../public/batman.jpg",
           genul: "Drama, SF.",
           traducator: "Anonimus",
           uploader: "Aurelian",
@@ -24,7 +24,7 @@ export default {
         },
         {
           id: "Kill Bill",
-          imagine: "../public/xl_266697_d1d415b0.webp",
+          imagine: "../public/killbill.jpg",
           genul: "Actiune",
           traducator: "Anonimus1",
           uploader: "Aurelian2",
@@ -37,7 +37,7 @@ export default {
         },
         {
           id: "Star Wars",
-          imagine: "../public/test.webp",
+          imagine: "../public/starwars.jpg",
           genul: "Science Fiction",
           traducator: "Anonimus2",
           uploader: "Aurelian1",
@@ -50,7 +50,7 @@ export default {
         },
         {
           id: "Spinal Tap",
-          imagine: "../public/xl_96697_8fffca15.webp",
+          imagine: "../public/spinaltap.jpg",
           genul: "Comedie",
           traducator: "Aurelian",
           uploader: "Anonimus",
@@ -62,8 +62,8 @@ export default {
           rezumat:"Spinal Tap, one of England's loudest bands, is chronicled by film director Marty DiBergi on what proves to be a fateful tour."
         },
         {
-          id: "God Thief",
-          imagine: "../public/xl_2332535_35f186a0.webp",
+          id: "Good Thief",
+          imagine: "../public/goodthief.jpg",
           genul: "Actiune",
           traducator: "Anonimus3",
           uploader: "Aurelian4",
@@ -78,7 +78,7 @@ export default {
         },
         {
           id: "Guardians Galaxy",
-          imagine: "../public/xl_2015381_2a13ec7d.webp",
+          imagine: "../public/guardiangalaxy.jpg",
           genul: "Drama, Sci-fi",
           traducator: "RETAIL",
           uploader: "retailsubs",
@@ -93,7 +93,7 @@ export default {
         },
         {
           id: "The Connection",
-          imagine: "../public/xl_9826820_f94ff667.webp",
+          imagine: "../public/theconnection.jpg",
           genul: "Actiune, Sci-fi",
           traducator: "Anonimus",
           uploader: "Aurelian",
@@ -102,10 +102,11 @@ export default {
           Descarcari: 982,
           tipul: "film",
           anul: 2018,
+          rezumat:"Two strangers struggle to overcome insurmountable odds when they are suddenly faced with unimaginable powers and an unbreakable connection."
         },
         {
           id: "Sonic The HedgeHog",
-          imagine: "../public/xl_12412888_a51d9d97.webp",
+          imagine: "../public/sonic.jpg",
           genul: "Familie, Aventura",
           traducator: "RETAIL",
           uploader: "retailsubs",
@@ -134,7 +135,7 @@ export default {
         },
         {
           id: "Spider Man",
-          imagine: "../public/xl_10872600_c809b67f.jpg",
+          imagine: "../public/spiderman.jpg",
           genul: "Aventura, Actiune",
           traducator: "RETAIL",
           uploader: "retailsubs",
@@ -148,7 +149,7 @@ export default {
         },
         {
           id: "Interstellar",
-          imagine: "../public/xl_816692_a074ce1f.webp",
+          imagine: "../public/interstellar.jpg",
           genul: "Horror",
           traducator: "RETAIL",
           uploader: "retailsubs",
@@ -163,7 +164,7 @@ export default {
         },
         {
           id: "Jurrasic World Dominion",
-          imagine: "../public/xl_8041270_f6f5cdc2.webp",
+          imagine: "../public/jurrasicdominion.jpg",
           genul: "Actiune",
           traducator: "RETAIL",
           uploader: "retailsubs",
