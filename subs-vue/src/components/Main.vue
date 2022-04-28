@@ -9,7 +9,7 @@ export default {
       obiecte: [
         {
           id: "Batman",
-          imagine: "@/assets/xl_1877830_764432ad.webp",
+          imagine: "../public/xl_1877830_764432ad.webp",
           genul: "Drama, SF.",
           traducator: "Anonimus",
           uploader: "Aurelian",
@@ -24,7 +24,7 @@ export default {
         },
         {
           id: "Kill Bill",
-          imagine: "@/assets/xl_266697_d1d415b0.webp",
+          imagine: "../public/xl_266697_d1d415b0.webp",
           genul: "Actiune",
           traducator: "Anonimus1",
           uploader: "Aurelian2",
@@ -37,7 +37,7 @@ export default {
         },
         {
           id: "Star Wars",
-          imagine: "@/assets/test.webp",
+          imagine: "../public/test.webp",
           genul: "Science Fiction",
           traducator: "Anonimus2",
           uploader: "Aurelian1",
@@ -50,7 +50,7 @@ export default {
         },
         {
           id: "Spinal Tap",
-          imagine: "@/assets/xl_96697_8fffca15.webp",
+          imagine: "../public/xl_96697_8fffca15.webp",
           genul: "Comedie",
           traducator: "Aurelian",
           uploader: "Anonimus",
@@ -63,7 +63,7 @@ export default {
         },
         {
           id: "God Thief",
-          imagine: "@/assets/xl_2332535_35f186a0.webp",
+          imagine: "../public/xl_2332535_35f186a0.webp",
           genul: "Actiune",
           traducator: "Anonimus3",
           uploader: "Aurelian4",
@@ -78,7 +78,7 @@ export default {
         },
         {
           id: "Guardians Galaxy",
-          imagine: "@/assets/xl_2015381_2a13ec7d.webp",
+          imagine: "../public/xl_2015381_2a13ec7d.webp",
           genul: "Drama, Sci-fi",
           traducator: "RETAIL",
           uploader: "retailsubs",
@@ -93,7 +93,7 @@ export default {
         },
         {
           id: "The Connection",
-          imagine: "@/assets/xl_9826820_f94ff667.webp",
+          imagine: "../public/xl_9826820_f94ff667.webp",
           genul: "Actiune, Sci-fi",
           traducator: "Anonimus",
           uploader: "Aurelian",
@@ -105,7 +105,7 @@ export default {
         },
         {
           id: "Sonic The HedgeHog",
-          imagine: "@/assets/xl_12412888_a51d9d97.webp",
+          imagine: "../public/xl_12412888_a51d9d97.webp",
           genul: "Familie, Aventura",
           traducator: "RETAIL",
           uploader: "retailsubs",
@@ -121,7 +121,7 @@ export default {
         },
         {
           id: "Halo",
-          imagine: "@/xl_2934286_93503ec7.jpg",
+          imagine: "../xl_2934286_93503ec7.jpg",
           genul: "Actiune, Aventura, Sci-fi",
           traducator: "Anonimus",
           uploader: "Aurelian",
@@ -134,7 +134,7 @@ export default {
         },
         {
           id: "Spider Man",
-          imagine: "@/assets/xl_10872600_c809b67f.jpg",
+          imagine: "../public/xl_10872600_c809b67f.jpg",
           genul: "Aventura, Actiune",
           traducator: "RETAIL",
           uploader: "retailsubs",
@@ -148,7 +148,7 @@ export default {
         },
         {
           id: "Interstellar",
-          imagine: "@/assets/xl_816692_a074ce1f.webp",
+          imagine: "../public/xl_816692_a074ce1f.webp",
           genul: "Horror",
           traducator: "RETAIL",
           uploader: "retailsubs",
@@ -163,7 +163,7 @@ export default {
         },
         {
           id: "Jurrasic World Dominion",
-          imagine: "@/assets/xl_8041270_f6f5cdc2.webp",
+          imagine: "../public/xl_8041270_f6f5cdc2.webp",
           genul: "Actiune",
           traducator: "RETAIL",
           uploader: "retailsubs",
