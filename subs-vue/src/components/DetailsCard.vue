@@ -83,7 +83,8 @@ export default {
   block-size: auto;
   object-fit: cover;
   object-position: top center;
-  border-radius: 20px;
+  border-radius: 11px;
+  aspect-ratio:2/2;
 }
 .wrapper {
   display: flex;

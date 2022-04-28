@@ -1,10 +1,13 @@
+<script setup>
+import { RouterLink, RouterView } from 'vue-router' 
+</script>
 <template>
     <footer>
             <section>
                 <h3>Link-uri interne</h3>
                 <a href="#">Subtitrari pentru filme</a>
                 <a href="#">Subtitrari pentru seriale</a>
-                <a href="#">Toate subtitrarile</a>
+                <RouterLink to="/subtitrari">Toate subtitrarile</RouterLink>
                 <a href="#">Subtitrari in alte limbi</a>
                 <a href="#">Prima pagina</a>
                 <a href="#">Forum</a>

@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Main from '../components/Main.vue'
 import NotFound from '../components/404.vue'
-import DetailsCard from'../components/DetailsCard.vue'
+import DetailsCard from '../components/DetailsCard.vue'
+import ToateSubtitrarile from '../components/ToateSubtitrarile.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -21,6 +22,12 @@ const router = createRouter({
       component:DetailsCard      
     }
     ,
+    {
+      path:"/subtitrari",
+      name:"ToateSubtitrarile",
+      component:ToateSubtitrarile
+
+    },
     {
       path: '/about',
       name: 'about',
