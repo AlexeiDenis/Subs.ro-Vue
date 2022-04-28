@@ -9,7 +9,7 @@ export default {
       obiecte: [
         {
           id: "Batman",
-          imagine: "../public/batman.jpg",
+          imagine: "../batman.jpg",
           genul: "Drama, SF.",
           traducator: "Anonimus",
           uploader: "Aurelian",
@@ -24,7 +24,7 @@ export default {
         },
         {
           id: "Kill Bill",
-          imagine: "../public/killbill.jpg",
+          imagine: "../killbill.jpg",
           genul: "Actiune",
           traducator: "Anonimus1",
           uploader: "Aurelian2",
@@ -37,7 +37,7 @@ export default {
         },
         {
           id: "Star Wars",
-          imagine: "../public/starwars.jpg",
+          imagine: "../starwars.jpg",
           genul: "Science Fiction",
           traducator: "Anonimus2",
           uploader: "Aurelian1",
@@ -50,7 +50,7 @@ export default {
         },
         {
           id: "Spinal Tap",
-          imagine: "../public/spinaltap.jpg",
+          imagine: "../spinaltap.jpg",
           genul: "Comedie",
           traducator: "Aurelian",
           uploader: "Anonimus",
@@ -63,7 +63,7 @@ export default {
         },
         {
           id: "Good Thief",
-          imagine: "../public/goodthief.jpg",
+          imagine: "../goodthief.jpg",
           genul: "Actiune",
           traducator: "Anonimus3",
           uploader: "Aurelian4",
@@ -78,7 +78,7 @@ export default {
         },
         {
           id: "Guardians Galaxy",
-          imagine: "../public/guardiangalaxy.jpg",
+          imagine: "../guardiangalaxy.jpg",
           genul: "Drama, Sci-fi",
           traducator: "RETAIL",
           uploader: "retailsubs",
@@ -93,7 +93,7 @@ export default {
         },
         {
           id: "The Connection",
-          imagine: "../public/theconnection.jpg",
+          imagine: "../theconnection.jpg",
           genul: "Actiune, Sci-fi",
           traducator: "Anonimus",
           uploader: "Aurelian",
@@ -106,7 +106,7 @@ export default {
         },
         {
           id: "Sonic The HedgeHog",
-          imagine: "../public/sonic.jpg",
+          imagine: "../sonic.jpg",
           genul: "Familie, Aventura",
           traducator: "RETAIL",
           uploader: "retailsubs",
@@ -135,7 +135,7 @@ export default {
         },
         {
           id: "Spider Man",
-          imagine: "../public/spiderman.jpg",
+          imagine: "../spiderman.jpg",
           genul: "Aventura, Actiune",
           traducator: "RETAIL",
           uploader: "retailsubs",
@@ -149,7 +149,7 @@ export default {
         },
         {
           id: "Interstellar",
-          imagine: "../public/interstellar.jpg",
+          imagine: "../interstellar.jpg",
           genul: "Horror",
           traducator: "RETAIL",
           uploader: "retailsubs",
@@ -164,7 +164,7 @@ export default {
         },
         {
           id: "Jurrasic World Dominion",
-          imagine: "../public/jurrasicdominion.jpg",
+          imagine: "../jurrasicdominion.jpg",
           genul: "Actiune",
           traducator: "RETAIL",
           uploader: "retailsubs",
