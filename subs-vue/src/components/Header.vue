@@ -5,9 +5,13 @@ import { RouterLink, RouterView } from "vue-router";
 export default {
   methods: {
     openToggle() {
-      this.$refs.t.style.visibility == "visible"
-        ? (this.$refs.t.style.visibility = "hidden")
-        : (this.$refs.t.style.visibility = "visible");
+      if (this.$refs.t.style.display == "none") {
+        this.$refs.t.style.display = "flex";
+      } else {
+        this.$refs.t.style.display = "none";
+      }
+    },
+    mounted() {
       window.scrollTo(0, 0);
     },
   },
@@ -60,12 +64,12 @@ export default {
               <button>Inregistrare</button>
             </div>
           </div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
+          <div ref="c" class="circle"></div>
+          <div ref="c" class="circle"></div>
+          <div ref="c" class="circle"></div>
+          <div ref="c" class="circle"></div>
+          <div ref="c" class="circle"></div>
+          <div ref="c" class="circle"></div>
         </div>
         <div @click="openToggle()" class="menu">
           <button aria-label="open primary navigation">
@@ -178,7 +182,7 @@ button {
   overflow-y: auto;
   overflow-x: hidden;
   overscroll-behavior: none;
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 .primary-navigation > button {
@@ -273,8 +277,8 @@ button {
   filter: blur(7px);
   border-radius: 50%;
   z-index: -1;
-  animation: floating 1s ease-in-out infinite alternate;
-  will-change:transform;
+  animation: floating 3s ease-in-out infinite alternate;
+  will-change: transform;
 }
 .circle:nth-of-type(6) {
   --variabila: 1;
@@ -306,7 +310,6 @@ button {
 @keyframes floating {
   to {
     transform: translateY(calc(-11px * var(--variabila))) scale(1.05);
-   
   }
 }
 </style>
