@@ -3,12 +3,19 @@ import { RouterLink, RouterView } from "vue-router";
 </script>
 <script>
 export default {
+  data() {
+    return {
+      semafor: false,
+    };
+  },
   methods: {
     openToggle() {
-      if (this.$refs.t.style.display == "none") {
+      if (!this.semafor) {
         this.$refs.t.style.display = "flex";
+        this.semafor = true;
       } else {
         this.$refs.t.style.display = "none";
+        this.semafor = false;
       }
     },
     mounted() {
