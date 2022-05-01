@@ -7,7 +7,7 @@
         <li role="listitem">
           <p>
             <a
-              href="mailto:tehnic@subs.ro&subject= - Problema Tehnica -&body=Am o problema tehnica in legatura cu..."
+              href="mailto:tehnic@subs.ro"
               >tehnic@subs.ro</a
             >
             - semnalare probleme tehnice.
@@ -16,7 +16,7 @@
         <li role="listitem">
           <p>
             <a
-              href="mailto:comerical@subs.ro&subject= - Propunere Parteneriat -&body=Propunere de parteneriat..."
+              href="mailto:comerical@subs.ro"
               >comerical@subs.ro</a
             >
             - propuneri de parteneriate sau reclame.
@@ -25,7 +25,7 @@
         <li role="listitem">
           <p>
             <a
-              href="mailto:abuz@subs.ro&subject= - Reclamare incalcare regulament -&body=Am de reclamat un utilizator..."
+              href="mailto:abuz@subs.ro"
               >abuz@subs.ro</a
             >
             - pentru a reclama incalcari ale regulamentului de catre utilizatori.
@@ -34,7 +34,7 @@
         <li role="listitem">
           <p>
             <a
-              href="mailto:contact@subs.ro&subject= - Exemplu titlu -&body=Buna ziua! Am..."
+              href="mailto:contact@subs.ro"
               >contact@subs.ro</a
             >
             - pentru restul mesajelor ce nu se incadreaza mai sus.
