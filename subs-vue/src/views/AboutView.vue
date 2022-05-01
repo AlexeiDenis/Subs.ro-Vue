@@ -13,6 +13,7 @@ export default {
       if(!this.isActive){
         this.isActive=true;
         this.$refs.test.style.opacity="1";
+        this.$refs.test;
       }
       else{
         this.$refs.test.style.opacity="0";
@@ -26,7 +27,7 @@ export default {
 <template>
   <div class="about">
   <h1 @click="openNav()">About Page</h1>
-  <p ref="test">shwoooosh</p>
+  <p ref="test" class="active">shwoooosh</p>
   </div>
 </template>
 
@@ -34,5 +35,14 @@ export default {
 .about {
   padding-block: 4em;
 }
-p{opacity:0;}
+p{opacity:0;color:black;}
+.active{
+  animation: col 3s ease-in infinite alternate;
+}
+
+@keyframes col {
+  to{
+    color:yellow;
+  }
+}
 </style>

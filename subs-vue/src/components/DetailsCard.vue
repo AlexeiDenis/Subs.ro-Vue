@@ -77,6 +77,7 @@ export default {
 
 .wrapper-imagine {
   width: 100%;
+ 
 }
 .wrapper-imagine img {
   max-inline-size: 100%;
@@ -84,7 +85,8 @@ export default {
   object-fit: cover;
   object-position: top center;
   border-radius: 11px;
-  aspect-ratio:2/2;
+  aspect-ratio:1/1;
+
 }
 .wrapper {
   display: flex;

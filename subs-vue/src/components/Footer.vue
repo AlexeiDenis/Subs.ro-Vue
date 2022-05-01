@@ -5,17 +5,17 @@ import { RouterLink, RouterView } from 'vue-router'
     <footer>
             <section>
                 <h3>Link-uri interne</h3>
-                <a href="#">Subtitrari pentru filme</a>
-                <a href="#">Subtitrari pentru seriale</a>
+                <RouterLink to="/filme">Subtitrari pentru filme</RouterLink>
+                <RouterLink to="/seriale">Subtitrari pentru seriale</RouterLink>
                 <RouterLink to="/subtitrari">Toate subtitrarile</RouterLink>
-                <a href="#">Subtitrari in alte limbi</a>
-                <a href="#">Prima pagina</a>
-                <a href="#">Forum</a>
-                <a href="#">Trailere</a>
-                <a href="#">API</a>
-                <a href="#">Acord utilizator</a>
-                <a href="#">Prelucrarea datelor</a>
-                <a href="#">Regulament</a>
+                <a href="#" style="color:hsla(21, 26%, 21%,0.5);">Subtitrari in alte limbi</a>
+                <RouterLink to="/">Prima pagina</RouterLink>
+                <a href="#" style="color:hsla(21, 26%, 21%,0.5);">Forum</a>
+                <a href="#" style="color:hsla(21, 26%, 21%,0.5);">Trailere</a>
+                <RouterLink to="/contact">Contact</RouterLink>
+                <a href="#" style="color:hsla(21, 26%, 21%,0.5);">Acord utilizator</a>
+                <a href="#" style="color:hsla(21, 26%, 21%,0.5);">Prelucrarea datelor</a>
+               <RouterLink to="/regulament" >Regulament</RouterLink>
             </section>
             <section>
                 <h3>Informatii generale</h3>

@@ -189,6 +189,9 @@ export default {
       return this.obiecte.filter((book) => book.tipul === "serial");
     },
   },
+  mounted() {
+    window.scrollTo(0, 0);
+  },
 };
 </script>
 
@@ -232,7 +235,7 @@ export default {
     </div>
   </section>
   <section>
-    <h2 class="title"><RouterLink to="/about">Seriale</RouterLink></h2>
+    <h2 class="title"><RouterLink to="/seriale">Seriale</RouterLink></h2>
     <div class="container-carousel">
       <div class="carousel">
         <RouterLink v-for="ob in onlyseries"  :to="{
@@ -258,7 +261,7 @@ export default {
   </section>
 
   <section>
-    <h2 class="title"><RouterLink to="/about">Filme</RouterLink></h2>
+    <h2 class="title"><RouterLink to="/filme">Filme</RouterLink></h2>
     <div class="container-carousel">
       <div class="carousel">
         <RouterLink v-for="ob in onlymovies"  :to="{

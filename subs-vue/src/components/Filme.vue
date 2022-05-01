@@ -1,55 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 </script>
-<template>
-  <h1>Toate subtitrarile</h1>
-  <div class="card" v-for="test in obiecte">
-    <p class="init">
-      {{ test.id }}
-      <span v-if="test.tipul === 'serial'">
-        - sezonul: {{ test.sezonul }} ({{ test.anul }})</span
-      >
-      <span v-else>{{ test.anul }}</span>
-    </p>
-    <div class="global-wrapper">
-      <div class="container">
-        <div class="wrapper-image">
-          <img :src="test.imagine" :alt="test.id" width="600" height="938" />
-        </div>
-        <div class="wrapper-details">
-          <p><span>Genul:</span> {{ test.genul }}</p>
-          <p><span>Uploader:</span> {{ test.uploader }}</p>
-          <p><span>Informatii:</span>{{ test.informatii }}</p>
-          <p><span>Comentarii:</span> {{ test.comentarii }}</p>
-          <p><span>Descarcari:</span> {{ test.Descarcari }}</p>
-        </div>
-      </div>
-      <a href="#">IMDB</a>
-      <RouterLink
-        :to="{
-          name: 'DetailsCard',
-          params: {
-            id: test.id,
-            descarcari: test.Descarcari,
-            imagine: test.imagine,
-            genul: test.genul,
-            traducator: test.traducator,
-            uploader: test.uploader,
-            sezonul: test.sezonul,
-            anul: test.anul,
-            rezumat: test.rezumat,
-            episod: test.currentlyEp,
-            tipul: test.tipul,
-          },
-        }"
-        >Detalii</RouterLink
-      >
-
-      <a href="#">Descarca</a>
-    </div>
-  </div>
-</template>
-
 <script>
 export default {
   data() {
@@ -250,8 +201,62 @@ export default {
   mounted() {
     window.scrollTo(0, 0);
   },
+  computed: {
+    filme() {
+      return this.obiecte.filter((book) => book.tipul === "film");
+    },
+  },
 };
 </script>
+
+<template>
+  <h1>Toate filmele</h1>
+  <div class="card" v-for="test in filme">
+    <p class="init">
+      {{ test.id }}
+      <span v-if="test.tipul === 'serial'">
+        - sezonul: {{ test.sezonul }} ({{ test.anul }})</span
+      >
+      <span v-else>{{ test.anul }}</span>
+    </p>
+    <div class="global-wrapper">
+      <div class="container">
+        <div class="wrapper-image">
+          <img :src="test.imagine" :alt="test.id" width="600" height="938" />
+        </div>
+        <div class="wrapper-details">
+          <p><span>Genul:</span> {{ test.genul }}</p>
+          <p><span>Uploader:</span> {{ test.uploader }}</p>
+          <p><span>Informatii:</span>{{ test.informatii }}</p>
+          <p><span>Comentarii:</span> {{ test.comentarii }}</p>
+          <p><span>Descarcari:</span> {{ test.Descarcari }}</p>
+        </div>
+      </div>
+      <a href="#">IMDB</a>
+      <RouterLink
+        :to="{
+          name: 'DetailsCard',
+          params: {
+            id: test.id,
+            descarcari: test.Descarcari,
+            imagine: test.imagine,
+            genul: test.genul,
+            traducator: test.traducator,
+            uploader: test.uploader,
+            sezonul: test.sezonul,
+            anul: test.anul,
+            rezumat: test.rezumat,
+            episod: test.currentlyEp,
+            tipul: test.tipul,
+          },
+        }"
+        >Detalii</RouterLink
+      >
+
+      <a href="#">Descarca</a>
+    </div>
+  </div>
+</template>
 
 <style scoped>
 .init {
@@ -316,12 +321,12 @@ h1 {
 a {
   color: black;
   border-radius: 5px;
-  display: flex;
-  align-items: center;
+  padding-inline: 0.6em;
+  display:flex;
+  align-items:center;
   justify-content: center;
   font-weight: 700;
-  height: 31px;
-  padding-inline: 0.6em;
+  height:31px;
 }
 a:nth-of-type(1) {
   background-color: #48a1f3;
