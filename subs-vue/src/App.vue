@@ -23,6 +23,7 @@ html {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
 }
+header{position:sticky;top:0;z-index:999;}
 body {
   padding: 0;
   margin: 0;

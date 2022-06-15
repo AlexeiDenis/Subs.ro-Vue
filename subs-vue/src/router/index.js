@@ -21,7 +21,7 @@ const router = createRouter({
       component: NotFound
     },
     {
-      path:'/details',
+      path:'/details/:id',
       name:'DetailsCard',
       component:DetailsCard      
     }
@@ -52,14 +52,7 @@ const router = createRouter({
       name:"Seriale",
       component:Seriale
     },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
-    }
+    
   ]
 })
 

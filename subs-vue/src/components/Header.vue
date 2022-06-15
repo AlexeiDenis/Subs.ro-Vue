@@ -41,9 +41,7 @@ export default {
           <input type="text" placeholder="Cautare..." />
         </div>
         <div ref="t" class="primary-navigation">
-          <button @click="openToggle()">
-            <img src="@/assets/close.svg" width="84" height="84" alt="" />
-          </button>
+         
           <div class="links">
             <div class="col1">
               <RouterLink to="/" @click="openToggle()">Acasa</RouterLink>
@@ -71,12 +69,7 @@ export default {
               <button>Inregistrare</button>
             </div>
           </div>
-          <div ref="c" class="circle"></div>
-          <div ref="c" class="circle"></div>
-          <div ref="c" class="circle"></div>
-          <div ref="c" class="circle"></div>
-          <div ref="c" class="circle"></div>
-          <div ref="c" class="circle"></div>
+         
         </div>
         <div @click="openToggle()" class="menu">
           <button aria-label="open primary navigation">
@@ -95,6 +88,7 @@ export default {
 .logo {
   align-self: flex-end;
 }
+
 nav {
   min-width: 313px;
   width: 95%;
@@ -109,7 +103,7 @@ nav::before {
   right: 0;
 }
 .wrapper-nav {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #e8e8e3;
   padding: 0.2em;
   display: flex;
   flex-direction: row;
@@ -178,28 +172,17 @@ button {
 }
 
 .primary-navigation {
-  background-color: #eae9df;
+ background-color: #e8e8e3;
   color: white;
-  position: absolute;
-  top: -11px;
-  left: -1.5%;
+  position: fixed;
+  top:0;
+  left:0;
   width: 100vw;
   height: 100vh;
-  z-index: 9999;
-  overflow-y: auto;
-  overflow-x: hidden;
-  overscroll-behavior: none;
   display: none;
   flex-direction: column;
 }
-.primary-navigation > button {
-  background-color: #cb8f8f49;
-  padding: 1em;
-  border-radius: 25px;
-  align-self: flex-end;
-  margin-inline-end: 14px;
-  margin-block-start: 9px;
-}
+
 .links {
   display: flex;
   align-items: center;
@@ -270,53 +253,5 @@ button {
 .primary-navigation .auth .col2 button {
   background-color: #cc6f6f;
 }
-.circle {
-  pointer-events: none;
-  width: 45vw;
-  height: 45vw;
-  position: absolute;
-  bottom: 0;
-  background: linear-gradient(
-    146.42deg,
-    rgba(31, 57, 193, 0.25) 33.63%,
-    rgba(159, 55, 162, 0.165) 74.67%
-  );
-  filter: blur(7px);
-  border-radius: 50%;
-  z-index: -1;
-  animation: floating 3s ease-in-out infinite alternate;
-  will-change: transform;
-}
-.circle:nth-of-type(6) {
-  --variabila: 1;
-  top: 5em;
-  left: 1em;
-}
-.circle:nth-of-type(7) {
-  --variabila: 5;
-  top: 18em;
-  left: 11em;
-}
-.circle:nth-of-type(8) {
-  --variabila: 6;
-  top: 2.7em;
-  right: 0;
-}
-.circle:nth-of-type(5) {
-  --variabila: 2;
-}
-.circle:nth-of-type(3) {
-  right: 0;
-  --variabila: 3;
-}
-.circle:nth-of-type(4) {
-  bottom: 13em;
-  left: -1em;
-  --variabila: 4;
-}
-@keyframes floating {
-  to {
-    transform: translateY(calc(-11px * var(--variabila))) scale(1.05);
-  }
-}
+
 </style>
